@@ -53,6 +53,8 @@
 	  <None Remove="Resources\Fonts\Prompt-ExtraLight.ttf" />
 	  <None Remove="Resources\Fonts\Prompt-Medium.ttf" />
 	  <None Remove="Resources\Fonts\secondicons.ttf" />
+	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\user.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
