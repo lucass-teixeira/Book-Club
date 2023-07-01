@@ -8,9 +8,9 @@
 
 # Node
 /node_modules
+/book-club/node_modules
 npm-debug.log
 yarn-error.log
-/book-club
 
 # IDEs and editors
 .idea/
