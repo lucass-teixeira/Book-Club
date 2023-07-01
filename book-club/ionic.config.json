@@ -1,7 +1,0 @@
-{
-  "name": "Book-club",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
