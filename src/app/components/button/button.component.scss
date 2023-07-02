@@ -10,9 +10,21 @@ button {
 .primary {
     background-color: #01E9FF;
     color: white;
+    transition: .3s background-color;
+
+    &:hover {
+        border: 1px solid #01E9FF;
+        background-color: transparent;
+        color: #fff;
+    }
 }
+
 .secondary {
     border: 2px solid #01E9FF;
     background-color: transparent;
     color: #fff;
+    transition: .3s background-color;
+    &:hover {
+        background-color: #01E9FF;
+    }
 }

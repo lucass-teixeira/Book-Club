@@ -29,38 +29,71 @@
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <app-button style="  font-size: 16px" [label]="'Join us now!'"></app-button>
+                    <li class="nav-item" *ngIf="!loggedIn">
+                        <app-button style=" font-size: 16px" [label]="'Join us now!'"></app-button>
                     </li>
                 </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
+
             </div>
         </nav>
-        <!-- <nav>
-            <div class="logo">BOOClub</div>
-            <ul class="btn-nav-actions">
-                <li><a href="#learn-more-section">About us</a></li>
-                <li><a>Pricing</a></li>
-                <li><app-button style="  font-size: 16px" [label]="'Join us now!'"></app-button></li>
-            </ul>
-        </nav> -->
-        <div class="hero">
+
+        <div class="hero" *ngIf="!isLoggedIn">
             <h1 class="hero-title">Discover the World Through Words</h1>
 
             <p class="hero-subtitle">Dive into Cultures with Our Engaging Book Club App for English Learners and Culture
                 Enthusiasts!</p>
             <div class="hero-btn-actions">
-                <app-button [label]="'Join us now'" style="width: 100%; margin-right: 25px"
-                    [type]="'primary'"></app-button>
+                <app-button [label]="'Join us now'" style="width: 100%; margin-right: 25px" [type]="'primary'"
+                    (click)="loggedIn($event)"></app-button>
                 <app-button [label]="'Learn more'" style="width: 100%;" [type]="'secondary'"></app-button>
             </div>
+        </div>
+
+        <div class="content" *ngIf="isLoggedIn">
+            <ng-container [ngSwitch]="steps()">
+                <div class="content-first-step" *ngSwitchCase="0">
+                    <h1 class="tutorial-header">What is your proficience in english?</h1>
+                    <ul>
+                        <li><button class="first" (click)="chooseLevel()">A1 Level</button></li>
+                        <li><button (click)="chooseLevel()">A2 Level</button></li>
+                        <li><button (click)="chooseLevel()">B1 Level</button></li>
+                        <li><button (click)="chooseLevel()">B2 Level</button></li>
+                        <li><button class="last" (click)="chooseLevel()">C1 Level</button></li>
+                    </ul>
+                </div>
+
+                <div class="content-second-step" *ngSwitchCase="1" [@sectionAnim]>
+                    <h1 class="tutorial-header">Here are some reccomended books for you</h1>
+                    <div class="d-flex justify-content-around">
+                        <div *ngFor="let book of books" class="book-item" (click)="selectBook(book)">
+                            <img [src]="book.volumeInfo.imageLinks?.smallThumbnail" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-third-step book-description-container" *ngSwitchCase="2">
+
+                    <img [src]="selectedBook?.volumeInfo.imageLinks?.smallThumbnail"/>
+                   
+                    <!-- <h1 class="tutorial-header">Here are some reccomended books for you</h1> -->
+                    <div class="book-description-container-content">
+                        <p [innerHTML]="selectedBook?.volumeInfo.description"></p>
+
+                        <app-button label="Buy book" type="secondary"></app-button>
+                        <app-button label="Start Reading"></app-button>
+                    </div>
+                </div>
+            </ng-container>
+
+
+
         </div>
     </div>
 </header>
 
-<section id="learn-more-section">
+<section *ngIf="isLoggedIn" id="content-container">
 
+</section>
+
+<section id="learn-more-section" [@sectionAnim]>
 </section>

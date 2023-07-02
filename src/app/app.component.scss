@@ -4,15 +4,17 @@ header {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(79, 31, 179, 1) 100%);
     height: 90vh;
+    transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     .header-container {
         @include width-container;
 
 
-        .navbar-brand{
+        .navbar-brand {
             color: white;
         }
-        #navbarSupportedContent{
+
+        #navbarSupportedContent {
             display: flex;
             justify-content: end;
             color: white;
@@ -31,7 +33,7 @@ header {
                     text-decoration: none;
                 }
 
-                a:hover{
+                a:hover {
                     text-decoration: underline;
                 }
             }
@@ -39,7 +41,7 @@ header {
 
         nav {
             display: flex !important;
-            justify-content: space-between!important;
+            justify-content: space-between !important;
             padding: 1rem 0;
 
 
@@ -60,7 +62,7 @@ header {
                         text-decoration: none;
                     }
 
-                    a:hover{
+                    a:hover {
                         text-decoration: underline;
                     }
                 }
@@ -71,14 +73,6 @@ header {
             max-width: 550px;
             margin-top: 4rem;
 
-            &-title {
-                font-size: 3.4rem;
-                color: white;
-                word-spacing: 0px;
-                letter-spacing: 5px;
-                line-height: 60px;
-                font-family: 'Mukta', sans-serif;
-            }
 
             &-subtitle {
                 color: #fff;
@@ -94,6 +88,14 @@ header {
             }
         }
 
+        .hero-title, .tutorial-header {
+            font-size: 3.4rem;
+            color: white;
+            word-spacing: 0px;
+            letter-spacing: 5px;
+            line-height: 60px;
+            font-family: 'Mukta', sans-serif;
+        }
 
 
     }
@@ -104,4 +106,71 @@ header {
 #learn-more-section {
     background-color: #1E1941;
     height: 90vh;
+}
+
+
+#content-container {
+    height: 100vh;
+    background-color: #1E1941;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.content {
+    .tutorial-header{
+        text-align: center;
+        margin: 200px 200px 100px 200px;
+    }
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            width: 100%;
+
+
+            button {
+                border: none;
+                padding: 1rem 5rem;
+                font-size: 1em;
+
+                &.first{
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+
+                }
+                &.last{
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+.book-item{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: .3s all;
+
+    &:hover{
+        transform: translateY(-50px);
+    }
+}
+
+.book-description-container{
+    color: white;
+    display: flex;;
+    img{
+        height: 300px;
+    }
+
+    &-content{
+        padding-left: 3rem;  
+        padding-right: 3rem;  
+    }
 }
