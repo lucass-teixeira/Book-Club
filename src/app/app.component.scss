@@ -8,11 +8,40 @@ header {
     .header-container {
         @include width-container;
 
-        nav {
-            padding: 1rem 0;
+
+        .navbar-brand{
+            color: white;
+        }
+        #navbarSupportedContent{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: end;
+            color: white;
+
+            li {
+                list-style: none;
+                margin: 12px;
+                text-align: center;
+                align-self: center;
+
+
+                a {
+                    vertical-align: center;
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    text-decoration: none;
+                }
+
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        nav {
+            display: flex !important;
+            justify-content: space-between!important;
+            padding: 1rem 0;
+
 
             .btn-nav-actions {
                 display: flex;

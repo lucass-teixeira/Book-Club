@@ -1,21 +1,60 @@
 <header>
     <div class="header-container">
 
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light" style="color: white">
+            <a class="navbar-brand" href="#">BooKlub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav-actions" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown" style="display: none;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <app-button style="  font-size: 16px" [label]="'Join us now!'"></app-button>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </nav>
+        <!-- <nav>
             <div class="logo">BOOClub</div>
             <ul class="btn-nav-actions">
                 <li><a href="#learn-more-section">About us</a></li>
                 <li><a>Pricing</a></li>
                 <li><app-button style="  font-size: 16px" [label]="'Join us now!'"></app-button></li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="hero">
             <h1 class="hero-title">Discover the World Through Words</h1>
 
             <p class="hero-subtitle">Dive into Cultures with Our Engaging Book Club App for English Learners and Culture
                 Enthusiasts!</p>
             <div class="hero-btn-actions">
-                <app-button [label]="'Join us now'" style="width: 100%; margin-right: 25px" [type]="'primary'"></app-button>
+                <app-button [label]="'Join us now'" style="width: 100%; margin-right: 25px"
+                    [type]="'primary'"></app-button>
                 <app-button [label]="'Learn more'" style="width: 100%;" [type]="'secondary'"></app-button>
             </div>
         </div>
