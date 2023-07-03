@@ -117,4 +117,9 @@ export class AppComponent {
     this.step++;
     this.selectedBook = book;
   }
+
+  visitWebsiteBook(){
+    console.log(this.selectedBook)
+    window.open(this.selectedBook?.volumeInfo.previewLink)
+  }
 }

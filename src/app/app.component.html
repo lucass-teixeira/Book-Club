@@ -84,7 +84,7 @@
                     <div class="book-description-container-content">
                         <p [innerHTML]="selectedBook?.volumeInfo.description"></p>
                         <div class="book-description-container-content-actions">
-                            <app-button label="Buy book" type="secondary"></app-button>
+                            <app-button (click)="visitWebsiteBook()" label="Buy book" type="secondary"></app-button>
                             <app-button style="margin-left: 8px" label="Start Reading"></app-button>
                         </div>
 
