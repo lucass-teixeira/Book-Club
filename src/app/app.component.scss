@@ -172,5 +172,11 @@ header {
     &-content{
         padding-left: 3rem;  
         padding-right: 3rem;  
+
+        &-actions{
+            text-align: end;
+        }
     }
+
+
 }

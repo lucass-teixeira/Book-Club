@@ -2,7 +2,7 @@
     <div class="header-container">
 
         <nav class="navbar navbar-expand-lg navbar-light" style="color: white">
-            <a class="navbar-brand" href="#">BooKlub</a>
+            <a class="navbar-brand" href="#">Booclub</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -15,6 +15,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                    <li class="nav-item" *ngIf="isLoggedIn">
+                        <a class="nav-link" href="#">Community</a>
                     </li>
                     <li class="nav-item dropdown" style="display: none;">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -29,9 +33,10 @@
                         </div>
                     </li>
 
-                    <li class="nav-item" *ngIf="!loggedIn">
+                    <li class="nav-item" *ngIf="!isLoggedIn">
                         <app-button style=" font-size: 16px" [label]="'Join us now!'"></app-button>
                     </li>
+
                 </ul>
 
             </div>
@@ -62,7 +67,7 @@
                     </ul>
                 </div>
 
-                <div class="content-second-step" *ngSwitchCase="1" [@sectionAnim]>
+                <div class="content-second-step" *ngSwitchCase="1">
                     <h1 class="tutorial-header">Here are some reccomended books for you</h1>
                     <div class="d-flex justify-content-around">
                         <div *ngFor="let book of books" class="book-item" (click)="selectBook(book)">
@@ -73,27 +78,30 @@
 
                 <div class="content-third-step book-description-container" *ngSwitchCase="2">
 
-                    <img [src]="selectedBook?.volumeInfo.imageLinks?.smallThumbnail"/>
-                   
+                    <img [src]="selectedBook?.volumeInfo.imageLinks?.smallThumbnail" />
+
                     <!-- <h1 class="tutorial-header">Here are some reccomended books for you</h1> -->
                     <div class="book-description-container-content">
                         <p [innerHTML]="selectedBook?.volumeInfo.description"></p>
+                        <div class="book-description-container-content-actions">
+                            <app-button label="Buy book" type="secondary"></app-button>
+                            <app-button style="margin-left: 8px" label="Start Reading"></app-button>
+                        </div>
 
-                        <app-button label="Buy book" type="secondary"></app-button>
-                        <app-button label="Start Reading"></app-button>
                     </div>
                 </div>
             </ng-container>
 
 
-
         </div>
     </div>
+
 </header>
 
 <section *ngIf="isLoggedIn" id="content-container">
 
 </section>
 
-<section id="learn-more-section" [@sectionAnim]>
+<section id="learn-more-section">
+    {{books}}
 </section>

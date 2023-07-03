@@ -1,0 +1,311 @@
+[
+    {
+        "kind": "books#volume",
+        "id": "7mmNEAAAQBAJ",
+        "etag": "HngY1HHCyEU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/7mmNEAAAQBAJ",
+        "volumeInfo": {
+          "title": "The Cat in the Hat Comes Back",
+          "authors": [
+            "Dr. Seuss"
+          ],
+          "publisher": "Random House Children's Books",
+          "publishedDate": "1958-09-12",
+          "description": "\u003cb\u003eThe riotously funny follow-up to \u003ci\u003eThe Cat in the Hat\u003c/i\u003e!\u003c/b\u003e\u003cbr\u003e\u003cbr\u003eThe Cat is back—along with some surpise friends—in this beloved Beginner Book by Dr. Seuss. Dick and Sally have no time to play. It's winter and they have mountains of snow to shovel. So when the Cat comes to visit, he decides to go inside and to take a bath. No problem, right? Wrong! The pink ring he leaves in the tub creates is a very BIG pink problem when he transfers the stubborn stain from the bath onto Mother's white dress, Dad's shoes, the floors, the walls, and ultimately, over the entire yard full of snow! Will the kids EVER clean up the mess? You bet they will, with some help from the Cat and his helpers: 26 miniature cats (AKA Little Cats A-Z) who live inside the Cat's hat! This classic Dr. Seuss story is the perfect choice for beginning readers and read-alouds, especially on snow days! \u003cbr\u003e\u003cbr\u003eOriginally created by Dr. Seuss, Beginner Books encourage children to read all by themselves, with simple words and illustrations that give clues to their meaning.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0394900022"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780394900025"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 72,
+          "printedPageCount": 72,
+          "dimensions": {
+            "height": "24.00 cm",
+            "width": "17.10 cm",
+            "thickness": "1.00 cm"
+          },
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction / Animals / Cats",
+            "Juvenile Fiction / Classics",
+            "Juvenile Fiction / Stories in Verse"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/publisher/content?id=7mmNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE70KiFsfnJirJLLqCG4B7KH97-KscUP3Jnu7NH_zQ-Ccs3ZbPVS-KMjO4AhlbbtzZaMCThQUxHk9HGlshFkismHpstavsFocxNWh6IsTiGWKx9BHSQf4zjf3OwMvK_oA_140eVIH&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/publisher/content?id=7mmNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72brFPrdRgn3Xac_Ytd59cSYTEvc6Zfe2DRYDyg6GlCPIDiWwVTcppdt_GsyzSAdko7ultmLR8ktfoDfG-O0Un_8HRerVAq0Z-aVKv2EMH1Nev2Qz_pm-HJFxGv9e-XSinR820H&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.cz/books?id=7mmNEAAAQBAJ&hl=&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=7mmNEAAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7mmNEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "CZ",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "CZ",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=7mmNEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "sIEtjgEACAAJ",
+        "etag": "jrkvFH1eliE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/sIEtjgEACAAJ",
+        "volumeInfo": {
+          "title": "English for Everyone Course Book Level 1 Beginner",
+          "authors": [
+            "Rachel Harding"
+          ],
+          "publisher": "Dorling Kindersley Limited",
+          "publishedDate": "2016",
+          "description": "\u003cp\u003eOur \u003ci\u003eCourse Book (Level 1)\u003c/i\u003e is a great reference guide to introduce English for beginners including key language skills, grammar, and vocabulary.\u003cbr\u003e \u003cbr\u003e Ideal for English test preparations or ESL lesson plans, the \u003ci\u003eCourse Book\u003c/i\u003e uses visual teaching methods to introduce the English language, reinforced through a variety of exercises and examples when used alongside our \u003ci\u003ePractice Book (Level 1)\u003c/i\u003e. From introducing yourself and talking about your home, city, and hobbies to expanding your vocabulary and understanding grammar and punctuation, this is a completely comprehensive introduction to practical English usage.\u003cbr\u003e \u003cbr\u003e Whether you are looking for ESL teaching resources, or a structured programme for adults to learn English as a second language, the \u003ci\u003eEnglish for Everyone Course Books\u003c/i\u003e provide:\u003cbr\u003e \u003cbr\u003e - \u003cb\u003eSample language examples:\u003c/b\u003e New language topics are introduced in context using clear, illustrated, and colour coded explanations\u003cbr\u003e - \u003cb\u003eSupporting audio:\u003c/b\u003e Extensive English-speaking audio materials integrated into every unit, giving vital oral and listening practice. (All supplementary audio is available on the DK English for Everyone website and IOS/Android App).\u003cbr\u003e - \u003cb\u003eQuick referencing:\u003c/b\u003e Easy-to-follow units, mirrored in both the Course and Practice Books for easy referencing and teaching\u003cbr\u003e - \u003cb\u003eSentence formation guides:\u003c/b\u003e Visual break downs of English grammar in use, showing learners how to recreate even complex English sentences\u003cbr\u003e - \u003cb\u003eVisual English vocabulary cues:\u003c/b\u003e Lists of useful English words and common phrases with visual aids are available throughout the book\u003cbr\u003e - \u003cb\u003ePersonalised learning:\u003c/b\u003e Write-on lines encourage ESL learners to write their own prompts and translations where needed to help customise English language learning\u003cbr\u003e \u003cbr\u003e The \u003ci\u003eEnglish for Everyone Level 1\u003c/i\u003e resources cover the skills and topics required for all major global English-language exams and reference frameworks including:\u003cbr\u003e - CEFR: A1\u003cbr\u003e - TOEFL (test paper): 0-250\u003cbr\u003e - TOEFL (computer-based test): 0-30\u003cbr\u003e - TOEFL (online test): 0-10\u003cbr\u003e - IELTS: 0-2.5\u003cbr\u003e - TOEIC: 0-200\u003cbr\u003e \u003cbr\u003e \u003ci\u003eEnglish for Everyone\u003c/i\u003e is a series of guides and practice books that supports English learning for adults from a beginner level, to intermediate, and advanced practical English. Offering an easy-to-follow format that offers guidance for both teaching English as a foreign language, and a self-study approach with resources available to improve English speaking, reading and writing.\u003c/p\u003e",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0241226317"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780241226315"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 184,
+          "printedPageCount": 184,
+          "dimensions": {
+            "height": "24.00 cm",
+            "width": "20.40 cm",
+            "thickness": "1.60 cm"
+          },
+          "printType": "BOOK",
+          "categories": [
+            "Foreign Language Study / English as a Second Language"
+          ],
+          "averageRating": 1,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=sIEtjgEACAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE73xE5nqlkqQ0ojJt91RkKMZh4Oj3yiv-2JcVeZ6gGgPWW4HkFkrjOMFDFLiNChmsnZEQeSX2IjUkErwltvQ5YFpby_4_xfNgPSo4ucmMr79pgTNnX0-yNWF0P_pqqPD00bGUtUF&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=sIEtjgEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71Wigimih1D3I7F-VtKO7AhoIaO3o7V2gLLuZ3ouDO06WJWgc1-N-pUuvJhMO7Ot8TfL5xBIpqkUginoiuX_JyXADL538-EGOhapEMl2ImTpN7OFiwLqQOotdkrPvgYj-Ctvj5R&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.cz/books?id=sIEtjgEACAAJ&hl=&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=sIEtjgEACAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=sIEtjgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "CZ",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "CZ",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=sIEtjgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "sIEtjgEACAAJ",
+        "etag": "jrkvFH1eliE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/sIEtjgEACAAJ",
+        "volumeInfo": {
+          "title": "English for Everyone Course Book Level 1 Beginner",
+          "authors": [
+            "Rachel Harding"
+          ],
+          "publisher": "Dorling Kindersley Limited",
+          "publishedDate": "2016",
+          "description": "\u003cp\u003eOur \u003ci\u003eCourse Book (Level 1)\u003c/i\u003e is a great reference guide to introduce English for beginners including key language skills, grammar, and vocabulary.\u003cbr\u003e \u003cbr\u003e Ideal for English test preparations or ESL lesson plans, the \u003ci\u003eCourse Book\u003c/i\u003e uses visual teaching methods to introduce the English language, reinforced through a variety of exercises and examples when used alongside our \u003ci\u003ePractice Book (Level 1)\u003c/i\u003e. From introducing yourself and talking about your home, city, and hobbies to expanding your vocabulary and understanding grammar and punctuation, this is a completely comprehensive introduction to practical English usage.\u003cbr\u003e \u003cbr\u003e Whether you are looking for ESL teaching resources, or a structured programme for adults to learn English as a second language, the \u003ci\u003eEnglish for Everyone Course Books\u003c/i\u003e provide:\u003cbr\u003e \u003cbr\u003e - \u003cb\u003eSample language examples:\u003c/b\u003e New language topics are introduced in context using clear, illustrated, and colour coded explanations\u003cbr\u003e - \u003cb\u003eSupporting audio:\u003c/b\u003e Extensive English-speaking audio materials integrated into every unit, giving vital oral and listening practice. (All supplementary audio is available on the DK English for Everyone website and IOS/Android App).\u003cbr\u003e - \u003cb\u003eQuick referencing:\u003c/b\u003e Easy-to-follow units, mirrored in both the Course and Practice Books for easy referencing and teaching\u003cbr\u003e - \u003cb\u003eSentence formation guides:\u003c/b\u003e Visual break downs of English grammar in use, showing learners how to recreate even complex English sentences\u003cbr\u003e - \u003cb\u003eVisual English vocabulary cues:\u003c/b\u003e Lists of useful English words and common phrases with visual aids are available throughout the book\u003cbr\u003e - \u003cb\u003ePersonalised learning:\u003c/b\u003e Write-on lines encourage ESL learners to write their own prompts and translations where needed to help customise English language learning\u003cbr\u003e \u003cbr\u003e The \u003ci\u003eEnglish for Everyone Level 1\u003c/i\u003e resources cover the skills and topics required for all major global English-language exams and reference frameworks including:\u003cbr\u003e - CEFR: A1\u003cbr\u003e - TOEFL (test paper): 0-250\u003cbr\u003e - TOEFL (computer-based test): 0-30\u003cbr\u003e - TOEFL (online test): 0-10\u003cbr\u003e - IELTS: 0-2.5\u003cbr\u003e - TOEIC: 0-200\u003cbr\u003e \u003cbr\u003e \u003ci\u003eEnglish for Everyone\u003c/i\u003e is a series of guides and practice books that supports English learning for adults from a beginner level, to intermediate, and advanced practical English. Offering an easy-to-follow format that offers guidance for both teaching English as a foreign language, and a self-study approach with resources available to improve English speaking, reading and writing.\u003c/p\u003e",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0241226317"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780241226315"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 184,
+          "printedPageCount": 184,
+          "dimensions": {
+            "height": "24.00 cm",
+            "width": "20.40 cm",
+            "thickness": "1.60 cm"
+          },
+          "printType": "BOOK",
+          "categories": [
+            "Foreign Language Study / English as a Second Language"
+          ],
+          "averageRating": 1,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=sIEtjgEACAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE73xE5nqlkqQ0ojJt91RkKMZh4Oj3yiv-2JcVeZ6gGgPWW4HkFkrjOMFDFLiNChmsnZEQeSX2IjUkErwltvQ5YFpby_4_xfNgPSo4ucmMr79pgTNnX0-yNWF0P_pqqPD00bGUtUF&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=sIEtjgEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71Wigimih1D3I7F-VtKO7AhoIaO3o7V2gLLuZ3ouDO06WJWgc1-N-pUuvJhMO7Ot8TfL5xBIpqkUginoiuX_JyXADL538-EGOhapEMl2ImTpN7OFiwLqQOotdkrPvgYj-Ctvj5R&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.cz/books?id=sIEtjgEACAAJ&hl=&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=sIEtjgEACAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=sIEtjgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "CZ",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "CZ",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=sIEtjgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "DxtkwAEACAAJ",
+        "etag": "ljp57BLc2Xk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/DxtkwAEACAAJ",
+        "volumeInfo": {
+          "title": "Market Leader",
+          "subtitle": "Intermediate Business English : Course Book",
+          "authors": [
+            "David Cotton"
+          ],
+          "publisher": "Pearson Education",
+          "publishedDate": "2010",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1408236958"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781408236956"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 175,
+          "printedPageCount": 175,
+          "dimensions": {
+            "height": "30.00 cm"
+          },
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=DxtkwAEACAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE72HAAy7kPGZ0Ntu7_7y3l0Djj_ZqcxJ39PmTOBxU1tBXgDA1mkK9T_j02LzgGFJZ0RUeen-nSApfKK2bqIcw8SXxV_YllgHM3Gr2ArZv4Ya7WfQV83TS9dnuEU217P_SnNO5H7A&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=DxtkwAEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70cNnLue0BvG1NeT91ZvbzOCtt19gUOQ7oocHa9HP7QP7Fhg3a-k0QS7vy6QcGYQb9w6hb_KQxFFjHgGXCZmUWgaA2AstcwkOjxRW3Bwk447GoHPcXgQyRywcJUh94FX_BHMDRw&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.cz/books?id=DxtkwAEACAAJ&hl=&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=DxtkwAEACAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=DxtkwAEACAAJ"
+        },
+        "saleInfo": {
+          "country": "CZ",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "CZ",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=DxtkwAEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      }
+      
+      
+      
+      
+]

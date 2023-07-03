@@ -57,7 +57,7 @@ import { Book } from './shared/models/models';
 })
 export class AppComponent {
   title = 'book-club-website';
-  isLoggedIn = true;
+  isLoggedIn = false;
   books: Book[] = [];
   selectedBook: Book | undefined;
   booksId: string[] = ['7mmNEAAAQBAJ', 'sIEtjgEACAAJ', 'qbw4DwAAQBAJ', 'DxtkwAEACAAJ']
@@ -88,13 +88,15 @@ export class AppComponent {
     //   console.log(this.books)
     // })
 
-    for (const key in this.booksId) {
-      const value = this.booksId[Number(key)]
-      console.log(value)
-      this.apiService.getById(value).subscribe((data: any) => {
-        this.books.push(data);
-      })
-    }
+    // for (const key in this.booksId) {
+    //   const value = this.booksId[Number(key)]
+    //   console.log(value)
+    //   this.apiService.getById(value).subscribe((data: any) => {
+    //     this.books.push(data);
+    //   })
+    // }
+
+    this.books = this.apiService.getBooksData();
     console.log(this.books)
 
   }
