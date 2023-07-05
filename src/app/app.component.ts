@@ -39,20 +39,20 @@ import { Book } from './shared/models/models';
         animate(50, style({
           transform: 'scale(1.05)'
         })),
-  
+
         animate(50, style({
           transform: 'scale(1)',
           opacity: 0.75
         })),
-  
+
         //scale down and fade out
         animate('120ms ease-out', style({
           transform: 'scale(0.68)',
-          opacity: 0 
+          opacity: 0
         }))
-      ]) 
+      ])
     ])
-  
+
   ]
 })
 export class AppComponent {
@@ -63,8 +63,14 @@ export class AppComponent {
   booksId: string[] = ['7mmNEAAAQBAJ', 'sIEtjgEACAAJ', 'qbw4DwAAQBAJ', 'DxtkwAEACAAJ']
 
 
-  loggedIn(event: any){
+  loggedIn(event: any) {
     this.isLoggedIn = true;
+        
+  }
+
+  logout(){
+    this.isLoggedIn = false;
+    this.step = 0;
   }
 
 
@@ -102,23 +108,24 @@ export class AppComponent {
   }
 
   step = 0;
-  steps(){
+  steps() {
 
     return this.step;
   }
 
-  chooseLevel()
-  {
+  chooseLevel() {
     this.step++;
+
   }
 
-  selectBook(book: Book)
-  {
+  selectBook(book: Book) {
     this.step++;
+
+
     this.selectedBook = book;
   }
 
-  visitWebsiteBook(){
+  visitWebsiteBook() {
     console.log(this.selectedBook)
     window.open(this.selectedBook?.volumeInfo.previewLink)
   }
