@@ -21,6 +21,7 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
     MdbCollapseModule,
     MdbDropdownModule,
     MdbFormsModule,
+    FormsModule,
     MdbModalModule,
     MdbPopoverModule,
     MdbRadioModule,
