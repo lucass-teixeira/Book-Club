@@ -1,7 +1,10 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { ApiService } from './shared/services/api.service';
-import { Book } from './shared/models/models';
+import { Book, BookClub, BookStudy, WordInfo } from './shared/models/models';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
+import { ModalTutorialComponent } from './components/modal-tutorial/modal-tutorial.component';
+import { ModalKnowWordComponent } from './components/modal-know-word/modal-know-word.component';
 
 @Component({
   selector: 'app-root',
@@ -61,15 +64,22 @@ export class AppComponent {
   books: Book[] = [];
   selectedBook: Book | undefined;
   booksId: string[] = ['7mmNEAAAQBAJ', 'sIEtjgEACAAJ', 'qbw4DwAAQBAJ', 'DxtkwAEACAAJ']
+  modalRef: MdbModalRef<ModalTutorialComponent> | null = null;
+  bookDetail: BookStudy | null = null;
+  texts: WordInfo[] = [];
+  step = 0;
 
+
+  showCommunityContainer = false;
+  bookClubs: BookClub[] = [];
 
   loggedIn(event: any) {
     this.isLoggedIn = true;
-        
   }
 
-  logout(){
+  logout() {
     this.isLoggedIn = false;
+    this.showCommunityContainer = false;
     this.step = 0;
   }
 
@@ -80,7 +90,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.loadData();
   }
-  constructor(public apiService: ApiService) { }
+  constructor(public apiService: ApiService, private modalService: MdbModalService) { }
 
   assignSearchTerm(event: any) {
     this.finalText = this.finalText + event.data.toString().replace(' ', '+');
@@ -89,25 +99,19 @@ export class AppComponent {
   }
   loadData() {
     this.searchTerm = 'The cat in the hat'
-    // this.apiService.getBooks(this.searchTerm).subscribe((data: any) => {
-    //   this.books = data.items[0];
-    //   console.log(this.books)
-    // })
-
-    // for (const key in this.booksId) {
-    //   const value = this.booksId[Number(key)]
-    //   console.log(value)
-    //   this.apiService.getById(value).subscribe((data: any) => {
-    //     this.books.push(data);
-    //   })
-    // }
 
     this.books = this.apiService.getBooksData();
-    console.log(this.books)
+
+    this.bookClubs = this.apiService.getBookClubs();
+    console.log('bookclubs', this.bookClubs)
+
+    this.bookDetail = this.apiService.getA1level();
+    const detail = this.apiService.getDataFinished();
+    console.log(detail)
+    this.texts = this.apiService.getDataFinished();
 
   }
 
-  step = 0;
   steps() {
 
     return this.step;
@@ -120,13 +124,30 @@ export class AppComponent {
 
   selectBook(book: Book) {
     this.step++;
-
-
     this.selectedBook = book;
   }
 
   visitWebsiteBook() {
-    console.log(this.selectedBook)
     window.open(this.selectedBook?.volumeInfo.previewLink)
+  }
+
+  openTutorialModal() {
+    this.modalService.open(ModalTutorialComponent).onClose.subscribe(data => {
+      this.step++;
+
+    });
+  }
+
+  openKnownWordModal(word: WordInfo) {
+    this.modalService.open(ModalKnowWordComponent, {
+      data: {
+        word
+      }
+    }).onClose.subscribe(data => {
+    });
+  }
+
+  showCommunity(){
+    this.showCommunityContainer = true;
   }
 }

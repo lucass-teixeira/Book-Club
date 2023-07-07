@@ -2,6 +2,23 @@
 * {
     margin: 0;
     scroll-behavior: smooth;
-
     padding: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+:root{
+    --color1: #6c1ad4;
+    --color2: #51139c;
+    --color3: #46168e;
+    --color3: #5220b7;
+    --color4: #1e1941;
+}
+

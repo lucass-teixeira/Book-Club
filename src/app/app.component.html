@@ -2,7 +2,8 @@
     <div class="header-container">
 
         <nav class="navbar navbar-expand-lg navbar-light" style="color: white">
-            <a class="navbar-brand" href="#" (click)="logout()"><img style="height: 2.8rem" src="../assets/text-logo.png" /></a>
+            <a class="navbar-brand" href="#" (click)="logout()"><img style="height: 2.8rem"
+                    src="../assets/text-logo.png" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -13,11 +14,11 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">About us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" *ngIf="!isLoggedIn">
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
 
-                    <li class="nav-item" *ngIf="isLoggedIn">
+                    <li class="nav-item" *ngIf="isLoggedIn" (click)="showCommunity()">
                         <a class="nav-link" href="#">Community</a>
                     </li>
                     <li class="nav-item dropdown" style="display: none;">
@@ -34,7 +35,8 @@
                     </li>
 
                     <li class="nav-item" *ngIf="!isLoggedIn">
-                        <app-button style=" font-size: 16px" [label]="'Join us now!'"></app-button>
+                        <app-button style=" font-size: 16px" [label]="'Join us now!'"
+                            (click)="loggedIn($event)"></app-button>
                     </li>
 
                 </ul>
@@ -42,63 +44,81 @@
             </div>
         </nav>
 
-        <div class="hero" *ngIf="!isLoggedIn">
-            <h1 class="hero-title">Discover the World Through Words</h1>
+        <div *ngIf="!showCommunityContainer">
 
-            <p class="hero-subtitle">Dive into Cultures with Our Engaging Book Club App for English Learners and Culture
-                Enthusiasts!</p>
-            <div class="hero-btn-actions">
-                <app-button [label]="'Join us now'" style="width: 100%; margin-right: 25px" [type]="'primary'"
-                    (click)="loggedIn($event)"></app-button>
-                <app-button [label]="'Learn more'" style="width: 100%;" [type]="'secondary'"></app-button>
+            <div class="hero" *ngIf="!isLoggedIn">
+                <h1 class="hero-title">Discover the World Through Words</h1>
+
+                <p class="hero-subtitle">Dive into Cultures with Our Engaging Book Club App for English Learners and
+                    Culture
+                    Enthusiasts!</p>
+                <div class="hero-btn-actions">
+                    <app-button [label]="'Join us now'" style="width: 100%; margin-right: 25px" [type]="'primary'"
+                        (click)="loggedIn($event)"></app-button>
+                    <app-button [label]="'Learn more'" style="width: 100%;" [type]="'secondary'"></app-button>
+                </div>
+            </div>
+
+            <div class="content" *ngIf="isLoggedIn">
+                <ng-container [ngSwitch]="steps()">
+                    <div class="content-first-step" *ngSwitchCase="0">
+                        <h1 class="tutorial-header">What is your proficience in english?</h1>
+                        <ul>
+                            <li><button class="first" (click)="chooseLevel()">A1 Level</button></li>
+                            <li><button (click)="chooseLevel()">A2 Level</button></li>
+                            <li><button (click)="chooseLevel()">B1 Level</button></li>
+                            <li><button (click)="chooseLevel()">B2 Level</button></li>
+                            <li><button class="last" (click)="chooseLevel()">C1 Level</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-second-step" *ngSwitchCase="1">
+                        <h1 class="tutorial-header">Here are some reccomended books for you</h1>
+                        <div class="d-flex justify-content-around">
+                            <div *ngFor="let book of books" class="book-item" (click)="selectBook(book)">
+                                <img [src]="book.volumeInfo.imageLinks?.smallThumbnail" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-third-step book-description-container" *ngSwitchCase="2">
+
+                        <img [src]="selectedBook?.volumeInfo.imageLinks?.smallThumbnail" />
+
+                        <!-- <h1 class="tutorial-header">Here are some reccomended books for you</h1> -->
+                        <div class="book-description-container-content">
+                            <p [innerHTML]="selectedBook?.volumeInfo.description"></p>
+                            <div class="book-description-container-content-actions">
+                                <app-button (click)="visitWebsiteBook()" label="Buy book" type="secondary"></app-button>
+                                <app-button style="margin-left: 8px" label="Start Reading"
+                                    (click)="openTutorialModal()"></app-button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- [mdbPopoverTitle]="word.text" mdbPopover="A state of utter confusion or disorder; a total lack of organization or order." -->
+                    <div class="book-description-container-content book-container" *ngSwitchCase="3">
+                        <div class="book-summary">
+                            <span *ngFor="let word of texts" (click)="openKnownWordModal(word)"
+                                [class.selected-word]="word.isSelected"
+                                [class.unknown-word]="word.isKnown">{{word.text}}</span>
+                        </div>
+                    </div>
+                </ng-container>
             </div>
         </div>
 
-        <div class="content" *ngIf="isLoggedIn">
-            <ng-container [ngSwitch]="steps()">
-                <div class="content-first-step" *ngSwitchCase="0">
-                    <h1 class="tutorial-header">What is your proficience in english?</h1>
-                    <ul>
-                        <li><button class="first" (click)="chooseLevel()">A1 Level</button></li>
-                        <li><button (click)="chooseLevel()">A2 Level</button></li>
-                        <li><button (click)="chooseLevel()">B1 Level</button></li>
-                        <li><button (click)="chooseLevel()">B2 Level</button></li>
-                        <li><button class="last" (click)="chooseLevel()">C1 Level</button></li>
-                    </ul>
+        <div class="community-container" *ngIf="showCommunityContainer">
+            <div *ngFor="let group of bookClubs" class="group-container">
+                <div class="group-container-img"> <img [src]="group.imgURL" /></div>
+                <div class="group-container-header">
+                    {{group.groupName}}
                 </div>
-
-                <div class="content-second-step" *ngSwitchCase="1">
-                    <h1 class="tutorial-header">Here are some reccomended books for you</h1>
-                    <div class="d-flex justify-content-around">
-                        <div *ngFor="let book of books" class="book-item" (click)="selectBook(book)">
-                            <img [src]="book.volumeInfo.imageLinks?.smallThumbnail" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-third-step book-description-container" *ngSwitchCase="2">
-
-                    <img [src]="selectedBook?.volumeInfo.imageLinks?.smallThumbnail" />
-
-                    <!-- <h1 class="tutorial-header">Here are some reccomended books for you</h1> -->
-                    <div class="book-description-container-content">
-                        <p [innerHTML]="selectedBook?.volumeInfo.description"></p>
-                        <div class="book-description-container-content-actions">
-                            <app-button (click)="visitWebsiteBook()" label="Buy book" type="secondary"></app-button>
-                            <app-button style="margin-left: 8px" label="Start Reading"></app-button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="" *ngSwitchCase="2">
-
-                </div>
-            </ng-container>
-
-
+            </div>
         </div>
+
     </div>
+
 
 </header>
 
@@ -107,5 +127,5 @@
 </section>
 
 <section id="learn-more-section">
-    {{books}}
+    <!-- {{books}} -->
 </section>

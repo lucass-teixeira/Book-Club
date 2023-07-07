@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "groupName": "The cat in the hat Comes Back",
+        "imgURL": "http://books.google.com/books/publisher/content?id=7mmNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE70KiFsfnJirJLLqCG4B7KH97-KscUP3Jnu7NH_zQ-Ccs3ZbPVS-KMjO4AhlbbtzZaMCThQUxHk9HGlshFkismHpstavsFocxNWh6IsTiGWKx9BHSQf4zjf3OwMvK_oA_140eVIH&source=gbs_api",
+        "meetingTime": "fri, 09:30 pm",
+        "membersAmount": 5,
+        "unlocked": false
+    },
+    {
+        "id": 2,
+        "groupName": "Harry Potter",
+        "meetingTime": "thu, 10:30 pm",
+        "membersAmount": 5,
+        "unlocked": false
+
+    }
+]
