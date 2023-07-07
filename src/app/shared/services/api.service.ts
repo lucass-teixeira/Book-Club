@@ -49,7 +49,9 @@ export class ApiService {
     const data = this.a1Books.default[0];
 
     // Use regex pattern to match words
-    const pattern = /[a-zA-Z]+/g;
+    // const pattern = /[a-zA-Z]+/g;
+    const pattern = /\b(?:[a-zA-Z]+\b|[.,])/g;
+   
     const words = data.text.match(pattern);
 
     const list: WordInfo[] = []

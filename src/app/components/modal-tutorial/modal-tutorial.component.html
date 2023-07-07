@@ -6,21 +6,33 @@
     <div [ngSwitch]="steps()">
 
         <div *ngSwitchCase="0">
-            <i style="color: var(--color2)" class="fa-solid fa-book-open"></i>
+            <div style="display: flex; justify-content: center">
+                <i style="color: var(--color2)" class="fa-solid fa-book-open"></i>
+            </div>
             <p class="first-step">Begin reading at a comfortable pace. Focus on understanding the main ideas and context
                 rather than getting stuck on every unfamiliar word.</p>
         </div>
 
         <div *ngSwitchCase="1">
-            <i class="fa-solid fa-person-walking"></i>
-            <p class="second-step">Begin reading at a comfortable pace. Focus on understanding the main ideas and
-                context
-                rather than getting stuck on every unfamiliar word.</p>
+            <div style="display: flex; justify-content: center">
+                <i style="color: var(--color2)" class="fa-solid fa-person-walking"></i>
+            </div>
+
+            <p class="second-step">Embrace the journey of learning English. Every step you take, every word you learn,
+                brings you closer to your goals. Believe in yourself and keep going!</p>
         </div>
 
         <div *ngSwitchCase="2">
-            <p class="third-step">Begin reading at a comfortable pace. Focus on understanding the main ideas and context
-                rather than getting stuck on every unfamiliar word.</p>
+            <!-- <i class="fa-solid fa-camera-security"></i> -->
+            <div style="display: flex; justify-content: center">
+                <i class="fa-solid fa-video" style="color: var(--color2)"></i>
+            </div>
+
+            <!-- <i class="fa-solid fa-circle-video"></i> -->
+            <i class="fa-regular fa-circle-video" style="color: var(--color2)"></i>
+            <!-- <i class="fa-regular fa-video" ></i> -->
+            <p class="third-step"> Read and discuss captivating books with fellow members to expand your vocabulary and
+                deepen your understanding of English literature.</p>
         </div>
     </div>
 

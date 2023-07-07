@@ -209,12 +209,15 @@ header {
     font-size: 1.5rem;
     overflow-wrap: break-word;
     overflow: hidden;
+    white-space: pre-wrap;
+    word-break: keep-all; 
     border-radius: 10px;
 
 
     span {
         padding: 4px;
-
+        white-space: pre-wrap;
+        word-break: keep-all; 
         &:hover {
             // box-shadow: 0 0 0 1px #d5d8dc;
             // box-shadow: 0 0 0 1px var(--color3);
@@ -307,5 +310,16 @@ header {
         border: 2px solid white;
         border-radius: 5px;
         // background-color: white;
+    }
+}
+
+.play-btn{
+    position: absolute;
+    transition: 1 all;
+    left: 30px;
+    bottom: 30px;
+
+    img{
+        height: 4rem;
     }
 }

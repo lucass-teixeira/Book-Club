@@ -19,7 +19,7 @@
                     </li>
 
                     <li class="nav-item" *ngIf="isLoggedIn" (click)="showCommunity()">
-                        <a class="nav-link" href="#">Community</a>
+                        <a class="nav-link" href="#">Clubs</a>
                     </li>
                     <li class="nav-item dropdown" style="display: none;">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -103,6 +103,10 @@
                             <span *ngFor="let word of texts" (click)="openKnownWordModal(word)"
                                 [class.selected-word]="word.isSelected"
                                 [class.unknown-word]="word.isKnown">{{word.text}}</span>
+                        </div>
+
+                        <div class="play-btn">
+                            <img src="https://user-images.githubusercontent.com/54940494/251736973-65033bab-b6a7-40fc-902d-cb135611be50.png"/>
                         </div>
                     </div>
                 </ng-container>
