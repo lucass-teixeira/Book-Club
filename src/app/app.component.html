@@ -97,6 +97,7 @@
                         </div>
                     </div>
                     <!-- [mdbPopoverTitle]="word.text" mdbPopover="A state of utter confusion or disorder; a total lack of organization or order." -->
+
                     <div class="book-description-container-content book-container" *ngSwitchCase="3">
                         <div class="book-summary">
                             <span *ngFor="let word of texts" (click)="openKnownWordModal(word)"
@@ -109,12 +110,45 @@
         </div>
 
         <div class="community-container" *ngIf="showCommunityContainer">
-            <div *ngFor="let group of bookClubs" class="group-container">
-                <div class="group-container-img"> <img [src]="group.imgURL" /></div>
-                <div class="group-container-header">
-                    {{group.groupName}}
+            <div *ngIf="showClubsContainer">
+
+                <h3 style="color: white;">Clubs</h3>
+                <div *ngFor="let group of bookClubs" class="group-container" [class.locked]="group.unlocked">
+                    <div class="group-container-img"> <img [src]="group.imgURL" /></div>
+                    <div class="group-container-content">
+                        <div class="group-container-content-header">
+                            <p>
+                                {{group.groupName}}
+
+                            </p>
+                            <div *ngIf="!group.unlocked; else unlockedTemplate ">
+                                <i class="fa-solid fa-lock-open locker"></i>
+                            </div>
+                        </div>
+
+                        <div class="group-container-content-footer">
+                            <div class="group-container-content-footer-amount">
+                                Attendees 2/{{group.membersAmount}}
+                            </div>
+
+                            <button type="button" class="btn btn-primary btn-principal"
+                                style="background-color: var(--color3);" (click)="goToGroup(group)">Join</button>
+
+                        </div>
+
+
+
+                        <ng-template #unlockedTemplate>
+                            <i class="fa-solid fa-lock locker"></i>
+                        </ng-template>
+                    </div>
                 </div>
             </div>
+
+            <div *ngIf="!showClubsContainer">
+
+            </div>
+
         </div>
 
     </div>

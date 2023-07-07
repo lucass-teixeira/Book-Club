@@ -71,6 +71,7 @@ export class AppComponent {
 
 
   showCommunityContainer = false;
+  showClubsContainer = true;
   bookClubs: BookClub[] = [];
 
   loggedIn(event: any) {
@@ -149,5 +150,9 @@ export class AppComponent {
 
   showCommunity(){
     this.showCommunityContainer = true;
+  }
+
+  goToGroup(group: BookClub){
+    this.showClubsContainer = false;
   }
 }
