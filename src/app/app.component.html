@@ -145,17 +145,35 @@
                 </div>
             </div>
 
-            <div *ngIf="!showClubsContainer">
+            <div *ngIf="!showClubsContainer" class="book-meeting">
+                <h3 style="color: white;">The in the Hat comes back</h3>
 
-                <p>PeerId: {{peerId}}</p>
-                <div style="width: 400px; height: 300px; border: 2px solid" id="remote-video"></div>
+                <!-- <p>PeerId: {{peerId}}</p> -->
+                <div id="remote-video"></div>
 
                 <br>
 
                 <div style="margin-top: 20px;">
-                    <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare' />
-                    <button class="button" (click)="connectWithPeer()">Call Peer</button>
-                    <button class="button" (click)="screenShare()">Screen share</button>
+
+                    <form class="">
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Id" aria-label="Id" [(ngModel)]='peerIdShare'
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <!-- <input type="text" class="input" placeholder="Peer Id" [(ngModel)]='peerIdShare' /> -->
+                        <div style="margin-top: 10px">
+                            <app-button (click)="screenShare()" type="secondary" [label]="'Screen Share'"></app-button>
+                            <app-button style="margin-left: 10px" (click)="connectWithPeer()"
+                                [label]="'Join Call'"></app-button>
+                        </div>
+
+
+                    </form>
+
+
+                    <!-- <button class="button" (click)="connectWithPeer()">Call Peer</button>
+                    <button class="button" (click)="screenShare()">Screen share</button> -->
                 </div>
             </div>
 

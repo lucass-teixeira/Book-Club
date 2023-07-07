@@ -175,6 +175,7 @@ export class AppComponent {
   private getPeerId = () => {
     this.peer.on('open', (id) => {
       this.peerId = id;
+      console.log(this.peerId);
     });
 
     this.peer.on('call', (call) => {
